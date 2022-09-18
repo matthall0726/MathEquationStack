@@ -4,7 +4,7 @@ import java.util.Stack;
 public class RPN {
 
     public static String[] s = {"5 + ) * ( 2",
-            " 2 + ( - 3 * 5 ) ",
+            " 2 + ( -3 * 5 ) ",
             "(( 2 + 3 ) * 5 ) * 8 ",
             "5 * 10 + ( 15 - 20 ) )  - 25",
             " 5 + ( 5 *  10 + ( 15 - 20 )  - 25 ) * 9"
@@ -17,15 +17,15 @@ public class RPN {
             Arithmetic a = new Arithmetic(s[i]);
 
             if (a.isBalance()) {
-                System.out.println("Expression " + s[i] + " is balanced\n");
+                System.out.println("\nExpression " + s[i] + " is balanced");
                 a.postfixExpression();
                 System.out.println("The post fixed expression is " + a.getPostfix());
-                //a.evaluateRPN();
+                System.out.println("The result is: " + a.evaluateRPN());
 
 
             }
             else
-                System.out.println("Expression is not balanced\n");
+                System.out.println("\nExpression is not balanced");
 
 
             }
