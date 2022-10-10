@@ -1,7 +1,4 @@
 /**
- * Authors: Matthew Hall & Ibraheem Amir Elmasri
- * Assignment 1
- * COP3530
  *
  * This program will determine if the equation passed in from the user
  * is balanced. If it is then we will take the infix equation and convert
